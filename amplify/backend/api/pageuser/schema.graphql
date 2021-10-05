@@ -5,7 +5,7 @@ schema {
 }
 
 type Query {
-    me: String! # Need to have something in Query or AppSync gets sad. This is just an unimplemented placehlder.
+    me: String! # Need to have something in Query or AppSync gets sad. This is just an unimplemented placeholder.
 }
 
 type Subscription {
