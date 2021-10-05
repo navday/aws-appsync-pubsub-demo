@@ -31,7 +31,7 @@ This example sets up an AppSync API endpoint that authenticates users with an AP
 
 Click the button to load the AWS Amplify Console, connect to GitHub and provide an IAM role for the build. The end to end back-end and front-end deployment should take around 5 minutes:
 
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/navday/dnb-appsync-for-pubsub-demo)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/navday/aws-appsync-pubsub-demo)
 
 ### Get the code and run on my local dev workstation
 
