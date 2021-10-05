@@ -14,10 +14,10 @@ type Subscription {
 }
 
 type Mutation {
-    setCounter(name: String!, value: Int!): Counter!
+    setCounter(name: String!, value: String!): Counter!
 }
 
 type Counter {
-    value: Int!
+    value: String!
     name: String!
 }
