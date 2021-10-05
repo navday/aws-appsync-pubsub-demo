@@ -9,15 +9,15 @@ type Query {
 }
 
 type Subscription {
-    counterChange(name: String!): Counter
-    @aws_subscribe(mutations: ["setCounter"])
+    userOnPageChange(pageName: String!): UserOnPage
+    @aws_subscribe(mutations: ["setUserOnPage"])
 }
 
 type Mutation {
-    setCounter(name: String!, value: String!): Counter!
+    setUserOnPage(pageName: String!, user: String!): UserOnPage!
 }
 
-type Counter {
-    value: String!
-    name: String!
+type UserOnPage {
+    user: String!
+    pageName: String!
 }

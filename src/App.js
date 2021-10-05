@@ -17,7 +17,7 @@ export default class App extends Component{
     render = () =>
         <div className="App">
             <div>
-                <Click name="myPage"/>
+                <Click page="myPage"/>
             </div>
 
         </div>

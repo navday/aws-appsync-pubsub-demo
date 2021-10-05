@@ -1,11 +1,11 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const setCounter = /* GraphQL */ `
-  mutation SetCounter($name: String!, $value: String!) {
-    setCounter(name: $name, value: $value) {
-      value
-      name
+export const setPageUser = /* GraphQL */ `
+  mutation SetPageUser($page: String!, $user: String!) {
+    setPageUser(page: $page, user: $user) {
+      user
+      page
     }
   }
 `;

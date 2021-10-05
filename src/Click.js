@@ -4,13 +4,13 @@ import * as subscriptions from "./graphql/subscriptions";
 import * as mutations from "./graphql/mutations";
 
 function Click(props)  {
-    const [value, setValue] = useState("Hi")
+    const [user, setUser] = useState("Hi")
     useEffect(() => {
         let subscription
         async function setupSubscription() {
             subscription = API.graphql({
                 query: subscriptions.counterChange,
-                variables: { name: props.name},
+                variables: { page: props.page},
                 authMode: 'API_KEY',
             }).subscribe({
                 next: (data) => {
@@ -21,15 +21,15 @@ function Click(props)  {
         }
         setupSubscription()
         return () => subscription.unsubscribe();
-    }, [props.name])
+    }, [props.page])
     const sendUpdate = async (e) => {
-        let newValue = value + "some text";
-        await API.graphql(graphqlOperation(mutations.setCounter, { name: props.name, value: newValue}))
+        let newUser = user + "-timestamp";
+        await API.graphql(graphqlOperation(mutations.setPageUser, { page: props.page, user: newUser}))
     }
 
     return (
         <div>
-            <h1>{value}</h1>
+            <h1>{user}</h1>
             <button onClick={sendUpdate}>Click Me</button>
         </div>
     );
