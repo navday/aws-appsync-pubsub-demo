@@ -1,6 +1,6 @@
 {
 	"api": {
-		"multiplayercounter": {
+		"pageuser": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {

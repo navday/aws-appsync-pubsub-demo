@@ -13,7 +13,7 @@ AWS Amplify is a set of tooling and libraries that makes it easier to get starte
 
 Look at `src/App.js` and you'll see a simple React app that uses the `@aws-amplify/api` library to talk to a backend GraphQL server powered by AWS AppSync.
 
-The GraphQL schema is located in `amplify/backend/api/multiplayercounter/schema.graphql`.
+The GraphQL schema is located in `amplify/backend/api/pageuser/schema.graphql`.
 
 We handle creating the `NONE` AppSync Data Source and mapping the `setCounter` mutation appropriately inside `amplify/backend/api/multiplayercounter/stacks/CustomResources.json`. Embedding VTL templates inside a JSON CloudFormation template file is sad, as you have to escape all the quotes. But it's a simple template that just maps our incoming data directly through to the response mapper so it's not so bad.
 
