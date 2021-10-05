@@ -9,15 +9,15 @@ type Query {
 }
 
 type Subscription {
-    userOnPageChange(pageName: String!): UserOnPage
-    @aws_subscribe(mutations: ["setUserOnPage"])
+    pageUserChange(pageName: String!): PageUser
+    @aws_subscribe(mutations: ["setPageUser"])
 }
 
 type Mutation {
-    setUserOnPage(pageName: String!, user: String!): UserOnPage!
+    setPageUser(pageName: String!, user: String!): PageUser!
 }
 
-type UserOnPage {
+type PageUser {
     user: String!
     pageName: String!
 }
