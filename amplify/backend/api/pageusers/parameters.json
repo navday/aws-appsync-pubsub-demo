@@ -1,5 +1,5 @@
 {
-    "AppSyncApiName": "pageusers",
+    "AppSyncApiName": "pageuser",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": "false"
 }
