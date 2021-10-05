@@ -38,7 +38,7 @@ Click the button to load the AWS Amplify Console, connect to GitHub and provide 
 This project uses AWS Amplify to deploy resources in your account. Assuming you've already instaled and configured the [AWS Amplify CLI](https://docs.amplify.aws/cli), you can run this command to automatically clone this repo, deploy this app in your AWS account, and boot up the local demo dev server:
 
 ```
-mkdir aws-appsync-for-pubsub-demo
-cd aws-appsync-for-pubsub-demo
-amplify init --app https://github.com/navday/aws-appsync-for-pubsub-demo
+mkdir aws-appsync-pubsub-demo
+cd aws-appsync-pubsub-demo
+amplify init --app https://github.com/navday/aws-appsync-pubsub-demo
 ```
